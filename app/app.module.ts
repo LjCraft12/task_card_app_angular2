@@ -2,12 +2,12 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { CardComponent } from './card/card.component'
+import { CardComponent } from './card/card.component'           // Importing the card component
 @NgModule({
     imports: [ BrowserModule ],
     declarations: [
         AppComponent,
-        CardComponent
+        CardComponent                                           // Declaring the card component
     ],
     bootstrap: [ AppComponent ]
 })
