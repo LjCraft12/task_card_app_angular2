@@ -1,12 +1,12 @@
 <div class="container">
     <div class="row">
         <div class="col-md-6 offset-md-3">
-            <form class="form-in-line">
+            <form class="form-in-line" (ngSubmit)="addTask()" #taskForm="ngForm">
                 <div class="form-group">
                     <label for="content-field" class="sr-only"></label>
-                    <input type="text" id="content-field" class="form-control" placeholder="Please enter a task" [(ngModel)]="currentTask.content" name="content">
+                    <input #contentField type="text" id="content-field" class="form-control" required placeholder="Please enter a task" [(ngModel)]="currentTask.content" name="content">
                 </div>
-                <button type="submit" class="btn btn-primary pull-right"><i class="fa fa-tasks" aria-hidden="true"></i> Add task</button>
+                <button type="submit" class="btn btn-primary pull-right" [disabled]="taskForm.form.invalid"><i class="fa fa-tasks" aria-hidden="true"></i> Add task</button>
             </form>
         </div>
     </div>
