@@ -13,3 +13,7 @@ i {
     color: #ff0000;
     padding-right: .25em;
 }
+i.task {
+    color: #000000;
+    padding-bottom: .35rem;
+}

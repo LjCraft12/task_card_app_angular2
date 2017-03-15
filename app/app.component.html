@@ -1,3 +1,16 @@
 <div class="container">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <form class="form-in-line">
+                <div class="form-group">
+                    <label for="content-field" class="sr-only"></label>
+                    <input type="text" id="content-field" class="form-control" placeholder="Please enter a task">
+                </div>
+                <button type="submit" class="btn btn-primary pull-right"><i class="fa fa-tasks" aria-hidden="true"></i> Add task</button>
+            </form>
+        </div>
+    </div>
+    <div class="row">
     <app-card *ngFor="let task of tasks" [task]="task" ></app-card>
+    </div>
 </div>
