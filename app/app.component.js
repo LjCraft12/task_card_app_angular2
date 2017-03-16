@@ -12,10 +12,7 @@ var core_1 = require('@angular/core');
 var task_1 = require('./model/task');
 var AppComponent = (function () {
     function AppComponent() {
-        this.tasks = [
-            new task_1.Task("Buy a monkey", false),
-            new task_1.Task("Study more TypeScript", false)
-        ];
+        this.tasks = []; // always put private in front of your component properties so nothing can modify the data out side of it
         this.currentTask = new task_1.Task(null, false);
     }
     AppComponent.prototype.addTask = function () {

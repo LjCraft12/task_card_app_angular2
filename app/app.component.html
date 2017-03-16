@@ -12,5 +12,8 @@
     </div>
     <div class="row">
     <app-card *ngFor="let task of tasks" [task]="task" ></app-card>
+        <h5 *ngIf="tasks.length == 0" class="jumbotron text-lg-center">
+            <h3>You task list is empty feel free to add a new task</h3>
+        </h5>
     </div>
 </div>
